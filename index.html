@@ -1,0 +1,592 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gian hàng ẩm thực 12Ti</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #38251c;
+    background-color: #fff8e9;
+}
+
+header {
+    background: linear-gradient(120deg, #8e251d, #e87532);
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+header h1 {
+    font-size: 34px;
+    margin: 0;
+}
+
+header p {
+    font-size: 18px;
+}
+
+nav {
+    background: #58251b;
+    padding: 12px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 14px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background: #e87532;
+    border-radius: 5px;
+}
+
+.banner {
+    text-align: center;
+    padding: 45px 20px;
+    background: #f7dfb5;
+}
+
+.banner h2 {
+    color: #a52d20;
+    font-size: 28px;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    margin: 30px 0;
+    scroll-margin-top: 65px;
+}
+
+h2 {
+    color: #a52d20;
+    border-bottom: 2px solid #e9b46b;
+    padding-bottom: 8px;
+}
+
+h3 {
+    color: #9d351f;
+}
+
+.noidung {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #00000012;
+}
+
+.danhsach {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.mon {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px #00000018;
+    padding-bottom: 15px;
+}
+
+.mon img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.mon h3, .mon p, .mon a {
+    margin-left: 14px;
+    margin-right: 14px;
+}
+
+.mon a, a {
+    color: #a52d20;
+}
+
+.mon a {
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    border: 1px solid #d6bba0;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #9d351f;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #fff0d9;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 14px;
+    border: 1px solid #cbb7a5;
+    border-radius: 5px;
+    font: inherit;
+}
+
+button {
+    background: #a52d20;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 18px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 3px;
+}
+
+button:hover {
+    background: #e87532;
+}
+
+.nut-phu {
+    background: #426c48;
+}
+
+video {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: 15px auto;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    background: #58251b;
+    color: white;
+    padding: 25px;
+}
+
+footer a {
+    color: #ffdb9c;
+}
+
+#ketqua {
+    color: #276337;
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+    .danhsach {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav a {
+        padding: 6px;
+    }
+
+    main {
+        padding: 12px;
+    }
+
+    .bang-truot {
+        overflow-x: auto;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header id="trangchu">
+    <h1>🍜 GIAN HÀNG ẨM THỰC 12Ti</h1>
+    <p>Hương vị quê hương Bình Định</p>
+    <p><i>Khám phá món ngon - Tôn vinh đặc sản Việt Nam</i></p>
+</header>
+
+<nav>
+    <a href="#trangchu">Trang chủ</a>
+    <a href="#gioithieu">Giới thiệu</a>
+    <a href="#monan">Món ăn</a>
+    <a href="#banggia">Bảng giá</a>
+    <a href="#video">Video</a>
+    <a href="#thongtin">Biểu mẫu</a>
+</nav>
+
+<div class="banner">
+    <h2>Đậm đà hương vị đất võ</h2>
+    <p>
+        Chào mừng bạn đến với gian hàng ẩm thực 12Ti,
+        nơi giới thiệu những món ngon đặc trưng của Bình Định.
+    </p>
+    <a href="#monan"><button>Khám phá món ngon</button></a>
+</div>
+
+<main>
+
+<section id="gioithieu">
+    <h2>1. Giới thiệu gian hàng</h2>
+    <div class="noidung">
+        <p>
+            Bình Định là vùng đất có nền văn hóa và ẩm thực
+            phong phú. Các món ăn nơi đây hấp dẫn bởi nguyên liệu
+            dân dã, cách chế biến độc đáo và hương vị riêng.
+        </p>
+
+        <p>
+            <b>Gian hàng ẩm thực 12Ti</b> mong muốn giới thiệu
+            đặc sản quê hương đến mọi người.
+            <span style="color:#c43d25">
+                Hãy cùng khám phá và thưởng thức!
+            </span>
+        </p>
+
+        <h3>Mục tiêu của gian hàng</h3>
+        <ul>
+            <li>Giới thiệu món ăn đặc sản Bình Định.</li>
+            <li>Chia sẻ thông tin và giá tham khảo.</li>
+            <li>Quảng bá văn hóa ẩm thực địa phương.</li>
+        </ul>
+
+        <h3>Một số đặc sản nổi bật</h3>
+        <ol>
+            <li>Bánh xèo tôm nhảy</li>
+            <li>Bún chả cá Quy Nhơn</li>
+            <li>Nem chợ Huyện</li>
+            <li>Tré Bình Định</li>
+            <li>Bánh ít lá gai</li>
+        </ol>
+    </div>
+</section>
+
+<section id="monan">
+    <h2>2. Danh sách món ăn đặc sản</h2>
+
+    <div class="danhsach">
+
+        <article class="mon">
+            <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=700&q=80"
+                 alt="Món mì nước">
+            <h3>Bánh xèo tôm nhảy</h3>
+            <p>Bánh giòn, tôm tươi, ăn kèm rau sống và nước chấm.</p>
+            <a href="https://www.google.com/search?q=b%C3%A1nh+x%C3%A8o+t%C3%B4m+nh%E1%BA%A3y+B%C3%ACnh+%C4%90%E1%BB%8Bnh"
+               target="_blank" rel="noopener">Tìm hiểu thêm</a>
+        </article>
+
+        <article class="mon">
+            <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=700&q=80"
+                 alt="Món ăn truyền thống">
+            <h3>Bún chả cá Quy Nhơn</h3>
+            <p>Nước dùng thơm ngọt, chả cá dai ngon, hấp dẫn.</p>
+            <a href="https://www.google.com/search?q=b%C3%BAn+ch%E1%BA%A3+c%C3%A1+Quy+Nh%C6%A1n"
+               target="_blank" rel="noopener">Tìm hiểu thêm</a>
+        </article>
+
+        <article class="mon">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=80"
+                 alt="Món ăn Việt Nam">
+            <h3>Nem chợ Huyện</h3>
+            <p>Đặc sản nổi tiếng với vị chua nhẹ và hương thơm riêng.</p>
+            <a href="https://www.google.com/search?q=nem+ch%E1%BB%A3+Huy%E1%BB%87n+B%C3%ACnh+%C4%90%E1%BB%8Bnh"
+               target="_blank" rel="noopener">Tìm hiểu thêm</a>
+        </article>
+
+        <article class="mon">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=700&q=80"
+                 alt="Món ăn">
+            <h3>Tré Bình Định</h3>
+            <p>Món ăn đặc trưng thường dùng trong các dịp sum họp.</p>
+            <a href="https://www.google.com/search?q=tré+Bình+Định"
+               target="_blank" rel="noopener">Tìm hiểu thêm</a>
+        </article>
+
+        <article class="mon">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=700&q=80"
+                 alt="Bánh và món ăn">
+            <h3>Bánh ít lá gai</h3>
+            <p>Bánh dẻo thơm, có màu sẫm và nhân ngọt truyền thống.</p>
+            <a href="https://www.google.com/search?q=b%C3%A1nh+%C3%ADt+L%C3%A1+Gai+B%C3%ACnh+%C4%90%E1%BB%8Bnh"
+               target="_blank" rel="noopener">Tìm hiểu thêm</a>
+        </article>
+
+        <article class="mon">
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=700&q=80"
+                 alt="Món nướng">
+            <h3>Gà nướng và món quê</h3>
+            <p>Những món ăn dân dã góp phần làm phong phú ẩm thực địa phương.</p>
+            <a href="https://www.google.com/search?q=%E1%BA%A9m+th%E1%BB%B1c+%C4%91%E1%BA%B7c+s%E1%BA%A3n+B%C3%ACnh+%C4%90%E1%BB%8Bnh"
+               target="_blank" rel="noopener">Tìm hiểu thêm</a>
+        </article>
+
+    </div>
+</section>
+
+<section id="banggia">
+    <h2>3. Bảng thông tin món ăn</h2>
+    <p><i>Giá dưới đây là ví dụ minh họa cho bài thực hành.</i></p>
+
+    <div class="bang-truot">
+        <table>
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Tên món ăn</th>
+                    <th>Đặc điểm</th>
+                    <th>Giá tham khảo</th>
+                </tr>
+            </thead>
+            <tbody id="bangmon">
+                <tr>
+                    <td>1</td>
+                    <td>Bánh xèo tôm nhảy</td>
+                    <td>Giòn, tôm tươi</td>
+                    <td>30.000đ</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Bún chả cá</td>
+                    <td>Nước dùng đậm đà</td>
+                    <td>35.000đ</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Nem chợ Huyện</td>
+                    <td>Chua nhẹ, thơm</td>
+                    <td>40.000đ</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Bánh ít lá gai</td>
+                    <td>Dẻo thơm, ngọt</td>
+                    <td>10.000đ</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section id="lienket">
+    <h2>4. Liên kết và hình ảnh</h2>
+    <div class="noidung">
+        <p>
+            Tham khảo thêm thông tin về du lịch và ẩm thực:
+        </p>
+        <ul>
+            <li>
+                <a href="https://vi.wikipedia.org/wiki/Quy_Nh%C6%A1n"
+                   target="_blank" rel="noopener">
+                   Tìm hiểu về thành phố Quy Nhơn
+                </a>
+            </li>
+            <li>
+                <a href="https://www.google.com/search?q=%E1%BA%A9m+th%E1%BB%B1c+B%C3%ACnh+%C4%90%E1%BB%8Bnh"
+                   target="_blank" rel="noopener">
+                   Khám phá thêm món ngon Bình Định
+                </a>
+            </li>
+        </ul>
+        <p>
+            Các hình ảnh trong bài được dùng để minh họa.
+            Khi hoàn thiện bài, nên thay bằng ảnh đúng của
+            từng món ăn.
+        </p>
+    </div>
+</section>
+
+<section id="video">
+    <h2>5. Video giới thiệu ẩm thực</h2>
+    <div class="noidung">
+        <p>
+            Xem video về đặc sản Bình Định trên YouTube:
+        </p>
+
+        <p>
+            <a href="https://www.youtube.com/results?search_query=%E1%BA%A9m+th%E1%BB%B1c+B%C3%ACnh+%C4%90%E1%BB%8Bnh+Quy+Nh%C6%A1n"
+               target="_blank" rel="noopener">
+               ▶ Mở video ẩm thực Bình Định
+            </a>
+        </p>
+
+        <p>
+            Có thể chèn video tải về của bạn bằng cách đặt
+            file video trong thư mục video và dùng thẻ video:
+        </p>
+
+        <video controls preload="metadata">
+            <source src="video/amthuc-binhdinh.mp4" type="video/mp4">
+            Trình duyệt không hỗ trợ video.
+        </video>
+        <p><small>
+            Video chỉ phát được khi bạn thêm file
+            video/amthuc-binhdinh.mp4 đúng đường dẫn.
+        </small></p>
+    </div>
+</section>
+
+<section id="thongtin">
+    <h2>6. Biểu mẫu cập nhật thông tin món ăn</h2>
+
+    <div class="noidung">
+        <p>Nhập thông tin món ăn mới để thêm vào bảng phía trên.</p>
+
+        <form id="formmon">
+            <label for="tenmon">Tên món ăn:</label>
+            <input id="tenmon" type="text"
+                   placeholder="Ví dụ: Bánh hỏi lòng heo"
+                   required>
+
+            <label for="dacdiem">Đặc điểm món ăn:</label>
+            <textarea id="dacdiem" rows="3"
+                      placeholder="Mô tả món ăn..."
+                      required></textarea>
+
+            <label for="gia">Giá tham khảo (VNĐ):</label>
+            <input id="gia" type="number" min="0"
+                   placeholder="Ví dụ: 30000" required>
+
+            <button type="submit">Thêm món ăn</button>
+            <button type="reset" class="nut-phu">Xóa nội dung nhập</button>
+        </form>
+
+        <p id="ketqua" aria-live="polite"></p>
+    </div>
+</section>
+
+<section id="xemthongtin">
+    <h2>7. Biểu mẫu xem thông tin món ăn</h2>
+
+    <div class="noidung">
+        <label for="timkiem">Nhập tên món muốn tìm:</label>
+        <input id="timkiem" type="text"
+               placeholder="Ví dụ: bánh xèo">
+
+        <button type="button" id="nuttim">Tìm món ăn</button>
+        <button type="button" id="nutxemhet" class="nut-phu">
+            Xem tất cả
+        </button>
+
+        <p id="ketquatim" aria-live="polite"></p>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <h3>GIAN HÀNG ẨM THỰC 12Ti</h3>
+    <p>Chủ đề: Đặc sản Bình Định</p>
+    <p>Người thực hiện: ................................</p>
+    <p>Lớp: ................................</p>
+    <p>Email liên hệ: amthuc12ti@example.com</p>
+    <p>© 2026 - Website thực hành HTML, CSS và JavaScript</p>
+    <a href="#trangchu">↑ Quay về đầu trang</a>
+</footer>
+
+<script>
+const form = document.getElementById("formmon");
+const bang = document.getElementById("bangmon");
+const ketqua = document.getElementById("ketqua");
+const timkiem = document.getElementById("timkiem");
+const ketquatim = document.getElementById("ketquatim");
+
+function capNhatSTT() {
+    Array.from(bang.rows).forEach((row, index) => {
+        row.cells[0].textContent = index + 1;
+    });
+}
+
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const ten = document.getElementById("tenmon").value.trim();
+    const dacdiem = document.getElementById("dacdiem").value.trim();
+    const gia = Number(document.getElementById("gia").value);
+
+    if (!ten || !dacdiem || gia < 0) {
+        ketqua.textContent = "Vui lòng nhập thông tin hợp lệ.";
+        return;
+    }
+
+    const row = bang.insertRow();
+    [bang.rows.length, ten, dacdiem,
+     gia.toLocaleString("vi-VN") + "đ"].forEach(value => {
+        const cell = row.insertCell();
+        cell.textContent = value;
+    });
+
+    capNhatSTT();
+    ketqua.textContent = "Đã thêm món ăn vào bảng thành công!";
+    form.reset();
+});
+
+function timMon() {
+    const tuKhoa = timkiem.value.trim().toLocaleLowerCase("vi");
+
+    let dem = 0;
+
+    Array.from(bang.rows).forEach(row => {
+        const phuHop = row.cells[1].textContent
+            .toLocaleLowerCase("vi").includes(tuKhoa);
+
+        row.style.display = phuHop ? "" : "none";
+
+        if (phuHop) dem++;
+    });
+
+    ketquatim.textContent = tuKhoa
+        ? "Tìm thấy " + dem + " món ăn."
+        : "Đang hiển thị tất cả món ăn.";
+}
+
+document.getElementById("nuttim")
+    .addEventListener("click", timMon);
+
+timkiem.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        timMon();
+    }
+});
+
+document.getElementById("nutxemhet")
+    .addEventListener("click", function() {
+        timkiem.value = "";
+        Array.from(bang.rows).forEach(row => {
+            row.style.display = "";
+        });
+        ketquatim.textContent = "Đang hiển thị tất cả món ăn.";
+    });
+</script>
+
+</body>
+</html>
